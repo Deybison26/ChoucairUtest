@@ -21,19 +21,19 @@ public class UtestRegisterPage extends PageObject {
             .located(By.id("birthMonth"));//id
 
     public static final Target OPTION_DATE_MONTH = Target.the("where do we write the month")
-            .located(By.xpath("//option[contains(text(), 'January')]"));//id
+            .located(By.xpath("//option[contains(text(), 'July')]"));//id
 
     public static final Target SELECT_DATE_DAY = Target.the("where do we write the day")
             .located(By.id("birthDay"));//id
 
     public static final Target OPTION_DATE_DAY = Target.the("where do we write the day")
-            .located(By.xpath("//option[contains(text(), '1')]"));//id
+            .located(By.xpath("//option[contains(text(), '20')]"));//id
 
     public static final Target SELECT_DATE_YEAR = Target.the("where do we write the year")
             .located(By.id("birthYear"));//id
 
     public static final Target OPTION_DATE_YEAR = Target.the("where do we write the year")
-            .located(By.xpath("//option[contains(text(), '1990')]"));//id
+            .located(By.xpath("//option[contains(text(), '2000')]"));//id
 
     public static final Target NEXT_LOCATION = Target.the("next button")
             .located(By.xpath("//span[contains(text(), 'Next: Location')]"));//id
@@ -55,4 +55,7 @@ public class UtestRegisterPage extends PageObject {
 
     public static final Target SELECT_LANGUAGE = Target.the("where do we write the city")
             .located(By.xpath("//span[contains(text(), 'English')]"));//id
+
+    public static final Target NEXT_LAST = Target.the("next button")
+            .located(By.xpath("//span[contains(text(),'Next: Last Step')]"));//id
 }

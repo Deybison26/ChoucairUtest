@@ -47,7 +47,8 @@ public class Register implements Task {
                 Click.on(UtestRegisterPage.SELECT_COUNTRY),
                 Click.on(UtestRegisterPage.NEXT_DEVICES),
                 Click.on(UtestRegisterPage.SELECT_VERSION),
-                Click.on(UtestRegisterPage.SELECT_LANGUAGE)
+                Click.on(UtestRegisterPage.SELECT_LANGUAGE),
+                Click.on(UtestRegisterPage.NEXT_LAST)
         );
     }
 

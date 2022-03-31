@@ -25,9 +25,9 @@ public class UtestStepDefinitions {
         OnStage.setTheStage(new OnlineCast());
     }
     //Scenario1
-    @Given("^than manuel wants to learn automation at the utest$")
-    public void thatManuelWantsToLearnAutomationAtTheUtest(List<UtestData> UtestData) throws Exception {
-        OnStage.theActorCalled("Manuel").wasAbleTo(OpenUp.thePage(),(Login.
+    @Given("^than deybison wants to learn automation at the utest$")
+    public void thatDeybisonWantsToLearnAutomationAtTheUtest(List<UtestData> UtestData) throws Exception {
+        OnStage.theActorCalled("Deybison").wasAbleTo(OpenUp.thePage(),(Login.
                 onThePage(UtestData.get(0).getStrUsername(),UtestData.get(0).getStrPassword())));
     }
     @When("^he finds the coursed called utest$")
@@ -37,12 +37,12 @@ public class UtestStepDefinitions {
 
     @Then("^the user Logout with their credentials")
     public void theUserLogoutWithTheirCredentials(){
-        OnStage.theActorCalled("Manuel").attemptsTo(LogOut.onThePage());
+        OnStage.theActorCalled("Deybison").attemptsTo(LogOut.onThePage());
     }
     //scenario2
     @Given("^set data in fields$")
     public void setDataInFields(List<UtestData> UtestData) throws Exception{
-        OnStage.theActorCalled("Manuel").wasAbleTo(OpenUp.thePage(), (Register.
+        OnStage.theActorCalled("Deybison").wasAbleTo(OpenUp.thePage(), (Register.
                 onThePage(UtestData.get(0).getStrFirstName(),UtestData.get(0).getStrLastName(),
                         UtestData.get(0).getStrEmailAddress(),UtestData.get(0).getStrCity(),
                         UtestData.get(0).getStrZipCode(),UtestData.get(0).getStrCountry())));
